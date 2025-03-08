@@ -1,0 +1,157 @@
+header .headerCont .navPC .topicMenuGroup{
+    display: flex;
+    justify-content: flex-end;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.logo img {
+    width: 24vh;
+    height: 24vh;
+}
+header {
+    height: 70vh;
+}
+header .headerCont {
+    border: 1px solid #f8c51a;
+    width: 1150px;
+    margin-left: 200px;
+    margin-top: 0px;
+    position: relative;
+    justify-content:center;
+    align-items: center;
+    text-align: left;
+    height: 22.5vh;
+    flex-direction: column;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+header .headerCont .navPC {
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    text-align: center;
+    margin-top: auto;
+}
+
+header .headerCont .navPC .topicMenuGroup .tit.darkTheme {
+    color: #f8c51a;
+}
+
+header .headerCont .navPC .topicMenuGroup .tit {
+    padding: 15px 20px;
+    letter-spacing: 2px;
+    color: #5eac85;
+}
+
+a {
+    margin: 2px;
+    padding: 8px;
+    text-decoration: none;
+    color: #5eac85;
+}
+
+header .headerCont .navPC .menuGroup {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header .headerCont .navPC .menuGroup>li>.tit {
+    letter-spacing: 1px;
+    color: #5eac85;
+}
+
+header .headerCont .navPC .menuGroup>li>.tit a {
+    text-decoration: none;
+    transition: color 0.3s ease
+}
+
+header .headerCont .navPC .menuGroup>li>.tit a:hover {
+    color: #ccf3d7;
+    font-weight: bold;  
+}
+
+header .headerCont .navPC .menuGroup>li {
+    float: left;
+    position: relative;
+}
+
+header .headerCont .navPC .menuGroup>li>.tit.darkTheme{
+    padding: 12px;
+    border: 1px solid #f8c51a;
+    box-sizing: border-box;
+    display: inline-block;
+    border-left: none;
+    border-right: none;
+}
+
+header .headerCont .navPC .menuGroup>li>.tit.titGap {
+    padding: 12px 20px;
+    border: 1px solid #f8c51a;
+    box-sizing: border-box;
+    border-left: none;
+}
+
+
+header .headerCont .navPC .menuGroup>li>.subMenu {
+    margin: auto;
+    padding: 0;
+    display: none;
+    list-style: none;
+    position: absolute;
+    left: 49.5%;
+    transform: translateX(-51%);
+}
+
+header .headerCont .navPC .menuGroup>li:hover .subMenu {
+    display: block;
+    font-size: 14px;
+}
+
+header .headerCont .navPC .menuGroup>li>.subMenu .subTit {
+    color: #05250d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header .headerCont .navPC .menuGroup>li>.subMenu .subTit a:hover {
+    color: #ccf3d7;
+    font-weight: bold; 
+}
+
+header .headerCont .navPC .menuGroup>li>.subMenu>.subTit>a.darkTheme {
+    border: 1px solid #f8c51a;
+}
+
+header .headerCont .navPC .menuGroup>li>.subMenu>.subTit>a {
+    width: 100%;
+    padding: 10px 6px;
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #5eac85;
+    white-space: nowrap;
+    letter-spacing: 2px;
+}
+
+header .headerCont .navPcEndBorder.darkTheme {
+    border-bottom: 1px solid #f8c51a;
+}
+
+header .headerCont .navPcEndBorder {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-bottom: 1px solid #5eac85;
+    opacity: 0;
+}

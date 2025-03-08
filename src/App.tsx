@@ -1,28 +1,18 @@
-import { useState } from 'react'
-import energyLogo from '/energy.png'
-import './App.css'
+import { BrowserRouter as Router } from "react-router-dom"; 
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://www.taipower.com.tw/" target="_blank">
-          <img src={energyLogo} className="logo energy" alt="Energy logo" />
-        </a>
+    <Router>
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-grow">
+          <Home />
+        </main>
+        <Footer />
       </div>
-      <h3>Welcome ! Mrs.Whiite ~</h3>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-      <p className="read-the-docs">
-        Click on the Energy logos to Know more
-      </p>
-    </>
-  )
+    </Router>
+  );
 }
-
-export default App
