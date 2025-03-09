@@ -13,7 +13,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <nav className="navPC opacity-1">
+        <nav className="navPC">
           <div className="topicMenuGroup">
             <a href="https://www.gempower.energy/getp/" className="tit darkTheme">會員專區</a>
             <a href="https://www.gempower.energy/platform.htm" className="tit darkTheme">緣電交易平台</a>
@@ -24,11 +24,15 @@ export default function Navbar() {
           <ul className="menuGroup">
             <li>
               <div className="tit titGap darkTheme">
-                <a href="https://www.gempower.energy/sustainableEnergy.htm1" className="darkTheme">永續能源</a>
+                <a className="darkTheme">
+                  <Link to="/sustainable-energy">
+                    永續能源
+                  </Link>
+                </a>
               </div>
             </li>
             <li>
-              <div className="tit titGap darkTheme">電力交易資源整合</div>
+              <div className="tit titGap darkTheme sub">電力交易資源整合</div>
               <div className="subMenu">
                 <div className="subTit">
                   <a href="https://www.gempower.energy/ancillaryExplain.html" className="darkTheme">電力交易平台是甚麼</a>
@@ -40,27 +44,47 @@ export default function Navbar() {
             </li>
             <li>
               <div className="tit titGap darkTheme">
-                <a href="https://www.gempower.energy/buyPower.html" className="darkTheme">我要買電</a>
+                <a className="darkTheme">
+                  <Link to="/buy-power">
+                    我要買電
+                  </Link>
+                </a>
               </div>
             </li>
             <li>
               <div className="tit titActive titGap titActiveDarkTheme darkTheme">
-                <a href="https://www.gempower.energy/buyPower.html" className="darkTheme">綠電顧問</a>
+                <a className="darkTheme">
+                  <Link to="/green-energy-consultant">
+                    綠電顧問
+                  </Link>
+                </a>
               </div>
             </li>
             <li>
               <div className="tit titGap darkTheme">
-                <a href="https://www.gempower.energy/questionAndAnswer.html" className="darkTheme">我要賣電</a>
+                <a className="darkTheme">
+                  <Link to="/sell-power">
+                    我要賣電
+                  </Link>
+                </a>
               </div>
             </li>
             <li>
               <div className="tit titGap darkTheme">
-                <a href="https://www.gempower.energy/questionAndAnswer.html" className="darkTheme">常見 Q&A</a>
+                <a className="darkTheme">
+                  <Link to="common-question-answer">
+                    常見 Q&A
+                  </Link>
+                </a>
               </div>
             </li>
             <li>
               <div className="tit darkTheme">
-                <a href="https://www.gempower.energy/newslist.html" className="darkTheme">最新消息</a>
+                <a className="darkTheme">
+                  <Link to="lastest-news">
+                    最新消息
+                  </Link>
+                </a>
               </div>
             </li>
           </ul>
