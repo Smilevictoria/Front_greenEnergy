@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className="dummyFillHeight"></div>
         
         <div className="logo opacity-1">
-          <Link to="/index.html">
+          <Link to="/HomePage">
             <img src="./energy.png" alt="energy" />
           </Link>
         </div>

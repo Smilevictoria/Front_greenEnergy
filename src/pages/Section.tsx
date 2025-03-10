@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Section() {
     return (
       <section className="container mx-auto px-6 py-12">
         <h1 className="text-3xl font-bold text-center">I'm BBOODDYY.</h1>

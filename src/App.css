@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 
-.main {
+.section {
   margin-left: 70%;
   display: flex;               /* 使用 Flexbox 佈局 */
   justify-content: center;     /* 水平居中 */
