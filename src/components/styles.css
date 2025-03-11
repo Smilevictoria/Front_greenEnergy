@@ -1,15 +1,26 @@
 @import "tailwindcss";
 
 .homeBody {
-  background-color: #7fa0e0; 
+  position: relative;
+  background-image: url('/green.jpg'); /* 替換成你的圖片路徑 */
+  background-size: cover; /* 讓圖片填滿整個畫面 */
+  background-position: center; /* 確保圖片居中 */
+  background-repeat: no-repeat; /* 防止圖片重複 */ 
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+.homeBody::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%);
+}
+
 .btn {
-  @apply flex items-center justify-center w-30 h-30 
+  @apply flex items-center justify-center opacity-75
          rounded-full border border-white/50 backdrop-blur-lg;
   
   background: linear-gradient(to bottom left, #c6e0c6, #437b43);
@@ -17,5 +28,6 @@
 }
 
 .btn:hover {
+  opacity: 100;
   box-shadow: 0px 10px 10px rgba(82, 128, 82, 0.8); 
 }

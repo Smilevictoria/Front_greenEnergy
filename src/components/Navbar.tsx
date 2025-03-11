@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'; // 如果使用 react-router
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 export default function Navbar() {

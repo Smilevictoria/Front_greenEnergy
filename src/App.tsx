@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom"; 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Section from "./pages/Section";
 import SustainableEnergy from "./pages/SustainableEnergy";
 import BuyPower from "./pages/BuyPower";
 import GreenEnergyConsultant from "./pages/GreenEnergyConsultant";
@@ -25,7 +24,7 @@ function Layout() {
   const hideLayout = hideLayoutPaths.includes(location.pathname);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="showPage">
       {!hideLayout && <Navbar />}
     <Routes>
           <Route path="/HomePage" element={<HomePage />} />
@@ -36,7 +35,6 @@ function Layout() {
           <Route path="/common-question-answer" element={<CommonQuestionAnswer />} />
           <Route path="/lastest-news" element={<LastestNews />} />
     </Routes>
-      {!hideLayout && <Section />}
       {!hideLayout && <Footer />}
     </div>
   );

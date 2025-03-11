@@ -1,23 +1,63 @@
+.showPage {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .min-h-screen {
   min-height: 100vh; 
   display: flex;
   flex-direction: column;
 }
 
-section {
-  margin-left: 70%;
+.sectionPage {
   display: flex;               /* 使用 Flexbox 佈局 */
+  flex-direction: column;
   justify-content: center;     /* 水平居中 */
-  align-items: center;         /* 垂直居中 */
-  text-align: center;          /* 文字居中 */
-  flex-grow: 1;                /* 讓 main 占據剩餘空間 */
-  padding-top: 20px;         
+  /*align-items: center;          垂直居中 */
+  margin-left: 40vh;
+  text-align: left;          /* 文字居中 */
+  margin-top: 30vh;         
   width: 100%;                 /* 確保它佔據整個頁面寬度 */
-  box-sizing: border-box;      /* 確保內邊距計算在內 */
 }
 
-/* @import "tailwindcss";
+.showPage footer {
+  background-color: #242424;
+  color: #656363;
+  margin-top: auto; 
+  padding: 1rem;
+  text-align: right;
+}
 
-.btn {
-  @apply flex w-36 items-center justify-center rounded-lg bg-blue-500 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700
-} */
+.homeButton {
+  position: relative;
+  min-width: 160px;
+  background: transparent;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+.homeButton span {
+  color: #f4b056;
+  mix-blend-mode: difference;
+}
+.homeButton:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 52px;
+  height: 100%;
+  border-radius: 50px;
+  background: rgb(15, 82, 44);
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.homeButton:hover:before {
+background:  rgb(15, 82, 44);
+width: 100%;
+}
