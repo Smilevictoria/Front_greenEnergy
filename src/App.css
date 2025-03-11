@@ -1,17 +1,10 @@
-.Navbar {
-  height: 80px; 
-  position: relative; 
-  width: 100%;
-  z-index: 10;  
-}
-
 .min-h-screen {
   min-height: 100vh; 
   display: flex;
   flex-direction: column;
 }
 
-.section {
+section {
   margin-left: 70%;
   display: flex;               /* 使用 Flexbox 佈局 */
   justify-content: center;     /* 水平居中 */
@@ -23,8 +16,8 @@
   box-sizing: border-box;      /* 確保內邊距計算在內 */
 }
 
-/* @import "tailwindcss"; */
-/* 
+/* @import "tailwindcss";
+
 .btn {
   @apply flex w-36 items-center justify-center rounded-lg bg-blue-500 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700
 } */

@@ -3,11 +3,11 @@ import './Navbar.css';
 
 export default function Navbar() {
   return (
-    <header className="relative">
+    <header className="relative Navbar">
       <div className="headerCont">
         <div className="dummyFillHeight"></div>
         
-        <div className="logo opacity-1">
+        <div className="logo opacity-100">
           <Link to="/HomePage">
             <img src="./energy.png" alt="energy" />
           </Link>

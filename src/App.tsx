@@ -21,8 +21,6 @@ export default function App() {
 
 function Layout() {
   const location = useLocation();
-
-  // 隱藏 Navbar、Section、Footer 的頁面
   const hideLayoutPaths = ["/HomePage"];
   const hideLayout = hideLayoutPaths.includes(location.pathname);
 
@@ -38,9 +36,7 @@ function Layout() {
           <Route path="/common-question-answer" element={<CommonQuestionAnswer />} />
           <Route path="/lastest-news" element={<LastestNews />} />
     </Routes>
-      <div className="section">
-        {!hideLayout && <Section />}
-      </div>
+      {!hideLayout && <Section />}
       {!hideLayout && <Footer />}
     </div>
   );
