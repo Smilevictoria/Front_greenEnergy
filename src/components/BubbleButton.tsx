@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import "./styles.css"; // 確保你有引入 CSS
+import "./styles.css";
 
 interface BubbleButtonProps {
   className?: string;  
@@ -12,20 +12,24 @@ const BubbleButton: React.FC<BubbleButtonProps> = ({ className, text, size }) =>
   return (
     <motion.div
       animate={{
-        y: [0, -10, 0], // Floating animation
+        y: [0, -10, 0],
       }}
       transition={{
         duration: 2,
         repeat: 4,
         ease: "easeInOut",
       }}
-      className={className}  // 使用傳入的 className
+      className={className}  
     >
       <motion.button
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.8 }} 
         className="btn relative"
-        style={{ width: size, height: size }}
+        style={{ 
+          width: size, 
+          height: size,
+          color: "#fff",
+        }}
       >
         {text}
         <span className="absolute top-2 left-2 w-6 h-6 bg-white/100 

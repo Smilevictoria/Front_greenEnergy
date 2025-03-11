@@ -7,10 +7,12 @@ export default function HomePage() {
         <div className="relative min-h-screen flex items-center justify-center">
           <Link to="/">
             <button className="homeButton">
-              <span>Welcome to Home Page</span>
+              <span>Welcome to Green Genergy</span>
             </button>
           </Link>
-          <BubbleButton className="fixed top-10 right-10" text='永續能源' size='16em'/>
+          <Link to="/sustainable-energy">
+            <BubbleButton className="fixed top-10 right-10" text='永續能源' size='16em'/>
+          </Link>
           <BubbleButton className="fixed top-50 right-80" text='電力交易平台' size='10em'/>
           <BubbleButton className="fixed top-85 right-30" text='我要買電' size='12em'/>
           <BubbleButton className="fixed top-138 right-55" text='常見 Q&A' size='10em'/>
