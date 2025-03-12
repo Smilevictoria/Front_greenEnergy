@@ -11,7 +11,7 @@ export default function BuyPower() {
 
   return (
     <div className="sectionPage">
-      <h1 className="text-3xl font-bold">{data.title}</h1>
+      <h1 className="text-2xl font-bold border-b-2 title pb-2 w-275">{data.title}</h1>
       <p className="mt-4">{data.content}</p>
     </div>
   );

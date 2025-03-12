@@ -22,6 +22,10 @@
   overflow: hidden;         
 }
 
+.subTitle {
+  color: #f8c51a;
+}
+
 .iea {
   float: right;
   padding: 50px;

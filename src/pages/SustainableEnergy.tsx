@@ -16,10 +16,10 @@ export default function SustainableEnergy() {
         <div className="iea">
           <img src="/IEA.jpg" alt="IEA" className="w-60 h-60 object-cover rounded-lg" />
         </div>
-        <div className="ieaTitle font-bold">
+        <div className="ieaTitle font-bold subTitle">
           <p>你綠電買到100%了嗎？</p>
         </div>
-        <div className="ieaText">
+        <div className="ieaText subText">
           <p>{data.content1}</p>
         </div>
       </div>
@@ -36,7 +36,7 @@ export default function SustainableEnergy() {
         <div className="renewable">
           <img src="/renewable.png" alt="renewable" className="w-90 h-70 object-cover rounded-lg" />
         </div>
-        <div className="renewableTitle font-bold">
+        <div className="renewableTitle font-bold subTitle">
           <p>再生能源 (Renewable Energy)</p>
         </div>
         <div className="renewableText">
@@ -47,7 +47,7 @@ export default function SustainableEnergy() {
         <div className="greenEnergy">
           <img src="/greenEnergy.jpg" alt="greenEnergy" className="w-100 h-80 object-cover rounded-lg" />
         </div>
-        <div className="greenEnergyTitle font-bold">
+        <div className="greenEnergyTitle font-bold subTitle">
           <p>綠能 (Green Energy)</p>
         </div>
         <div className="greenEnergyText">

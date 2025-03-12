@@ -16,7 +16,7 @@ export default function Navbar() {
         <nav className="navPC">
           <div className="topicMenuGroup">
             <a href="https://www.gempower.energy/getp/" className="tit darkTheme">會員專區</a>
-            <a href="https://www.gempower.energy/platform.htm" className="tit darkTheme">緣電交易平台</a>
+            <a href="https://www.gempower.energy/platform.html" className="tit darkTheme">緣電交易平台</a>
           </div>
           
           <div className="clear"></div>
