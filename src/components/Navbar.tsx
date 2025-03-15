@@ -72,7 +72,7 @@ export default function Navbar() {
             <li>
               <div className="tit titGap darkTheme">
                 <a className="darkTheme">
-                  <Link to="common-question-answer">
+                  <Link to="/common-question-answer">
                     常見 Q&A
                   </Link>
                 </a>
@@ -81,7 +81,7 @@ export default function Navbar() {
             <li>
               <div className="tit darkTheme">
                 <a className="darkTheme">
-                  <Link to="lastest-news">
+                  <Link to="/lastest-news">
                     最新消息
                   </Link>
                 </a>
