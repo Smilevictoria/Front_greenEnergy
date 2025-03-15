@@ -5,7 +5,7 @@ export default function HomePage() {
     return (
       <div className="homeBody">
         <div className="relative min-h-screen flex items-center justify-center">
-          <Link to="/">
+          <Link to="/sustainable-energy">
             <button className="homeButton">
               <span>Welcome to Green Energy</span>
             </button>

@@ -117,6 +117,7 @@ header .headerCont .navPC .menuGroup>li>.subMenu {
     position: absolute;
     left: 49.5%;
     transform: translateX(-51%);
+    z-index: 1000;
 }
 
 header .headerCont .navPC .menuGroup>li:hover .subMenu {

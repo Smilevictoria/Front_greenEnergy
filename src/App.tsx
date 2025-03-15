@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom"; 
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate  } from "react-router-dom"; 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import SustainableEnergy from "./pages/SustainableEnergy";
@@ -27,6 +27,7 @@ function Layout() {
     <div className="showPage">
       {!hideLayout && <Navbar />}
     <Routes>
+          <Route path="/" element={<Navigate to="/HomePage" />} />
           <Route path="/HomePage" element={<HomePage />} />
           <Route path="/sustainable-energy" element={<SustainableEnergy />} />
           <Route path="/buy-power" element={<BuyPower />} />

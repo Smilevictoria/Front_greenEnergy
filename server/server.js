@@ -19,7 +19,7 @@ app.get("/api/sustainable-energy", (req, res) => {
 app.get("/api/buy-power", (req, res) => {
   res.json({
     title: "我要買電",
-    content: "這裡提供如何購買綠電的資訊。",
+    content: "平均年發電量 + 裝置容量 + 剩餘可售比例",
   });
 });
 

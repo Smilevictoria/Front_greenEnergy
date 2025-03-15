@@ -14,10 +14,10 @@
   display: flex;           
   flex-direction: column;
   justify-content: center;     
-  /*align-items: center;  */       
+  /* align-items: center;        */
   margin-left: 35vh;
   text-align: left;       
-  margin-top: 30vh;         
+  margin-top: 28vh;         
   width: 1100px;      
   overflow: hidden;         
 }
@@ -132,11 +132,92 @@
   transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .homeButton:hover:before {
-background:  rgb(15, 82, 44);
-width: 100%;
+  background:  rgb(15, 82, 44);
+  width: 100%;
 }
 
 .title {
   border-bottom: 1px solid #f8c51a;
   color: #f8c51a;
+}
+
+.subButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh; 
+  margin-bottom: 20px; 
+}
+
+.subButton1 {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 15vw;
+  height: 8vh;
+  border: 2px solid #f8c51a;
+  border-radius: 4px;
+  color: #f8c51a;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+  padding: 5px 10px;
+}
+
+.subButton2 {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 15vw;
+  height: 8vh;
+  border-radius: 4px;
+  background: #f8c51a;
+  color: #242424;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+  padding: 5px 10px;
+}
+
+.subButton1:hover, .subButton2:hover {
+  font-size: 1.3rem;
+}
+
+.boxInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh; 
+  margin-top: 40px;
+}
+
+.boxInfoStyle {
+  width: 25vw;
+  height: 50vh;
+  border: 2px solid goldenrod;
+  text-align: center;
+}
+
+.boxInfoName {
+  font-size: 1rem;
+  margin-top: 2vh;
+  color: #c0bebe;
+}
+
+.boxInfoType {
+  font-size: 2rem;
+  margin-top: 0.5vh;
+  margin-bottom: 1.5vh;
+}
+
+.boxImage {
+  width: 18vw;
+  margin-left: 4vh;
+  margin-bottom: 2vh;
 }

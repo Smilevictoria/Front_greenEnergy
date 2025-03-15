@@ -35,10 +35,10 @@ export default function Navbar() {
               <div className="tit titGap darkTheme sub">電力交易資源整合</div>
               <div className="subMenu">
                 <div className="subTit">
-                  <a href="https://www.gempower.energy/ancillaryExplain.html" className="darkTheme">電力交易平台是甚麼</a>
+                  <a href="https://www.gempower.energy/ancillaryExplain.html" className="darkTheme bg-[#242424]">電力交易平台是甚麼</a>
                 </div>
                 <div className="subTit">
-                  <a href="https://www.gempower.energy/ancillaryParticipate.htm1" className="darkTheme">投票參與輔助服務市場</a>
+                  <a href="https://www.gempower.energy/ancillaryParticipate.html" className="darkTheme bg-[#242424]">投票參與輔助服務市場</a>
                 </div>
               </div>
             </li>
