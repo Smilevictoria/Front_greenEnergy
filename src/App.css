@@ -104,6 +104,7 @@
 .homeButton {
   position: relative;
   min-width: 160px;
+  margin-bottom: 10vh;
   background: transparent;
   border: none;
   border-radius: 50px;
